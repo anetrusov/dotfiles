@@ -1,6 +1,11 @@
+[core]
+  excludesfile = ~/.gitignore
 [alias]
   co = checkout
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   br = branch
   ci = commit
   st = status
+  put = push origin HEAD
+[push]
+  default = simple
