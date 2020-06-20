@@ -9,3 +9,7 @@ function dk-rm {
 function dk-rmi {
   docker rmi $(docker images -f 'dangling=true' -q)
 }
+
+function dk-rmv {
+  docker volume rm $(docker volume -f 'dangling=true' -q)
+}
