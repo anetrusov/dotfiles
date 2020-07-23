@@ -12,5 +12,5 @@ function dk-rmi {
 }
 
 function dk-rmv {
-  docker volume rm $(docker volume -f 'dangling=true' -q)
+  docker volume rm $(docker volume ls -f 'dangling=true' -q)
 }
